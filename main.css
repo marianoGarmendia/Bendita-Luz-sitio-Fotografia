@@ -77,8 +77,30 @@ body{
 
  .menuFlotante {
      position: absolute;
-     top: 0;
+     transform: translateY(-50%);
+     top: 50vh;
      left: 0;
+     color: #eee;
+     /* display: flex; */
+     /* flex-direction:column; */
+     /* justify-content: space-evenly; */
+     padding: 0px 10px;
+     height: 400px;
+     /* position: fixed; */
+ }
+
+ 
+ .menuFlotante .enlaces {
+     height: 100%;
+     display: flex; 
+     flex-direction:column; 
+     justify-content: space-evenly; 
+     color: #eee;
+      /* padding: 25px 0px;  */
+ }
+
+ .menuFlotante .enlaces a {
+     color: #eee;
  }
 
  /******* TITULO Y LOGO *********/
@@ -154,8 +176,11 @@ body{
 /********* SECCION 2  ***********/
 
 .section2 {
+    display: flex;
+    align-items: center;
      width: 100%;
      min-height: 100vh;
+     position: relative;
 }
 
 /*******  Estilos Materialize  *******/
@@ -180,34 +205,44 @@ body{
 
 .section3 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    /* vertical-align: top; */
-    column-gap: 50px;
-    width: 80%;
-    margin: 0 auto;
+    flex-grow: 1;
+    width: 100%;
     min-height: 100vh;
     color: #eee;
-    /* clip-path: polygon(37% 0, 0 0, 0 21%); */
+    position: relative;
+}
 
-    /* clip-path: polygon(100% 0, 0 0, 100% 100%); */
-    /* background-color: #d8c3b7; */
+.imagenBlog {
+    width: 60%;
 }
 
 
-
 .imagenBlog img {
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 500px;
     object-fit: cover;
-    border: 2px solid #eee;
     border-radius: 10px;
 }
 
 .section3 .blog {
+    clip-path: circle(38.2% at 50% 50%);
+    background-color: #d8c3b7;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:start;
+    align-items:center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-content {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .section3 .blog h2{
@@ -216,9 +251,15 @@ body{
 
 .section3 .blog p{
     font-size: 25px;
-    
 }
 
+/********** SECTION 4  ***********/
+
+.section4 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
  
 
 
