@@ -28,6 +28,16 @@ body{
     justify-content: center;
 }
 
+.fondo__titulo {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    background-color: #2f2f2f;
+    opacity: 0.5;
+}
+
 
 .section-index{
     width: 100%;
@@ -53,7 +63,7 @@ body{
 /********** NAVEGACION *************/
 
 .cabecera-menu {
-    position: fixed;
+    position: relative;
      width: 100%;
      display: flex;
      justify-content: space-evenly;
@@ -63,6 +73,7 @@ body{
      z-index: 10;
      background-color: #ffffff;
      opacity: 0.8;
+     /* transition: all 0.5 ease-out; */
  } 
 
 .nav-menu {
@@ -88,11 +99,11 @@ body{
      font-size: 17px;
  }
 
+
  .nav-menu ul li a:hover {
-     /* border-bottom: solid 1px #2f2f2f; */
+     
      opacity: 0.4;
-     /* color: #eee; */
-    
+       
  }
 
  
@@ -100,35 +111,27 @@ body{
  /******* TITULO Y LOGO *********/
 
  .contenedor{
-     /* background-color: black; */
-    width: 75%;
-    margin: 0 auto;
+     
+    width: 50%;
+    left: 0px;
     height: 100%;
     display:flex;
-    align-items: center;
-    /* position:relative; */
+    align-items: flex-start;
+    
  }
 
- .logo{
-     /* z-index: 3; */
-     /* height: 60%; */
-     /* text-align: center; */
-     /* display: flex; */
-     /* justify-content: center; */
-     /* align-items: center; */
-     /* flex-direction:column; */
-     width: 100%;
-     /* background-color: #eee; */
-     /* opacity: 0.8; */
+ .logo {
+     width: 50%;
+     margin: 0 auto;
+     margin-top: 50px;
      color: #eee;
-     overflow: hidden;
  }
 
  .titulo{
     font-family: 'Poiret One', cursive;
     letter-spacing: 1px;
     font-weight: bold;
-    /* border-bottom: 1px solid #2f2f2f; */
+    
  }
 
  .linea__titulo{
@@ -144,12 +147,14 @@ body{
 
  .bendita-luz h1 , h6{
      z-index: 3;
-     /* font-weight: bold; */
+     font-weight: bold;
  }
 
  .bendita-luz h1 {
-    font-weight: bold;
-    font-size: 7em;;
+    font-weight: bold 700;
+    font-size: 160px;
+    font-family: 'Dancing Script', cursive;
+
  }
 
  .bendita-luz h6 {
@@ -167,7 +172,7 @@ body{
      width: 100%;
      min-height: calc(100vh + 62px);
      position: relative;
-     /* margin-top: 0px; */
+     margin-top: 50px;
     color: #2f2f2f;
     
      
@@ -177,7 +182,9 @@ body{
     padding-bottom: 50px;
     letter-spacing: 3px;
     color: #2f2f2f;
-    font-weight: bold;
+    font-weight: regular;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem
 }
 /*******  Estilos Materialize  *******/
 
@@ -195,7 +202,7 @@ body{
    width: 100%;
    height: 100%;
    object-fit: cover;
-   /* border-radius: 15px; */
+   border-radius: 5px;
 }
 
 
@@ -247,28 +254,29 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* row-gap: 50px; */
+    row-gap: 50px;
     width: 100%;
-    min-height: 100vh;
     color: #2f2f2f;
     position: relative;
-    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .blog {
     display: flex;
     width: 80%;
-    min-height: 100vh;
-    margin: 0 auto; 
+    background-color: #fff;
+    margin: 50px auto; 
     align-items: center;
     justify-content:space-around;
+    padding: 50px 0px;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.2);
 }
 
 .section3 .blog img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-radius: 15px; */
+ 
 }
 
 
@@ -289,6 +297,8 @@ body{
 
 .section3 .blog h2{
     font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+
     font-size: 2.5rem;
 }
 
@@ -302,7 +312,20 @@ body{
     position: relative;
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
+
+.section4 img{
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    z-index: -2;
+}
+
+
  
 
 
